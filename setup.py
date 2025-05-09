@@ -23,9 +23,9 @@ def get_version(rel_path):
         raise RuntimeError("Unable to find version string.")
     
 setup(
-    name='netbox-plugin-helloworld',
-    version=get_version('netbox_plugin_helloworld/version.py'),
-    description='Helloworld Plugin to demonstrate plugin without models...',
+    name='netbox-plugin-dummycontroller',
+    version=get_version('netbox_plugin_dummycontroller/version.py'),
+    description='Dummy Controller Plugin for Autocon3 workshop',
     install_requires=[],
     packages=find_packages(),
     include_package_data=True,
