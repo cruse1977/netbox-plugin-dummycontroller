@@ -2,7 +2,7 @@
 
 # about
 
-This a simple netbox helloworld type plugin to demonstrate a plugin without models
+This a simple netbox plugin to mimic a controller for a power monitoring system, with list and get functionality
 
 # install
 
