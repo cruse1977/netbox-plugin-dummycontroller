@@ -3,7 +3,7 @@ from . import serializers
 from django.http import HttpResponse, JsonResponse
 from rest_framework.viewsets import ViewSet
 from dcim.models import Device
-
+from netbox.api.authentication import IsAuthenticatedOrLoginNotRequired
 
 class ControllerView(ViewSet):
     ''' view for the main controller '''
@@ -50,8 +50,7 @@ class ControllerView(ViewSet):
             }
         }
     ]
-
-    permission_required = ("dcim.view_site")
+    permission_classes = [IsAuthenticatedOrLoginNotRequired]
     queryset = Device.objects.none()
     serializer_class = serializers.HelloWorldDummySerializer()
 
