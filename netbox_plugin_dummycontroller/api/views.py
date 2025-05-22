@@ -11,8 +11,11 @@ class ControllerView(ViewSet):
     data = [
         {
             "name": "pdu01",
-            "model": "APC5978",
+            "model": "AP5978",
+            "manufacturer": "APC",
             "total_load": "13.1A",
+            "management_ip": "10.163.1.1/24",
+            "serial": "123456",
             "ports": {
                 "outlet1": {
                     "type": "C13",
@@ -28,8 +31,11 @@ class ControllerView(ViewSet):
         },
         {
             "name": "pdu02",
-            "model": "APC5958",
+            "model": "APC958",
+            "manufacturer": "APC",
             "total_load": "11.1A",
+            "management_ip": "10.163.1.2/24",
+            "serial": "23457",
             "ports": {
                 "outlet3": {
                     "type": "C13",
